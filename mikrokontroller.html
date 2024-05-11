@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="icon">Order</title>
+    <link rel="icon"  type="image/x-icon" href="img/thumbnail.png">
+
+    <link rel="stylesheet" href="mikrokontroller.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section>
+  <div class="teksAtas">
+    <h2>Happy Shopping</h2>
+    <p>Berikut adalah mikrokontroller yang tersedia di Iot Part, silahkan di order yaa!!</p>
+    <p>Jika ada kendala, hubungi kami dengan cara klik link <a href="https://www.instagram.com/its_stev27/" target="_blank">ini</a>.</p>
+  </div>
+    
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="img/arduino_nano.jpeg" style="width:100%">
+  <div class="text">Arduino Nano</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="img/arduino_uno.jpeg" style="width:100%">
+  <div class="text">Arduino Uno</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="img/esp32.jpeg" style="width:100%">
+  <div class="text">ESP32</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="img/Raspberry_Pi_Pico.jpeg" style="width:100%">
+  <div class="text">Raspbeery Pi Pico</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="img/wemos_mini.jpeg" style="width:100%">
+  <div class="text">Wemos D1 Mini</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="img/esp8266.jpeg" style="width:100%">
+  <div class="text">ESP8266</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+
+        <form action="" name="orderBook">
+          <div class="row">
+            <div class="col-50">
+
+              <h3>Barang</h3>
+
+              <label for="mikrokontroller"><i class="fa fa-list"></i> Jenis Mikrokontroller</label>
+              <select id="mikrokontroller" name="mikrokontroller">
+                <option value="arduinoUno">Arduino Uno</option>
+                <option value="arduinoNano">Arduino Nano</option>
+                <option value="esp32">ESP32</option>
+                <option value="esp8266">ESP8266</option>
+                <option value="wemosD1Mini">Wemos D1 Mini</option>
+                <option value="raspberryPiPico">Raspbeery Pi Pico</option>
+              </select>
+      
+              <label for="banyakBeli"><i class="fa fa-list-ol"></i> Jumlah</label>
+              <input type="text" id="banyakBeli" name="banyakBeli" placeholder="Banyak Beli">
+
+              <label for="hargaSatuan"><i class="fa fa-calculator"></i> Harga</label>
+              <input type="text" id="hargaSatuan" name="hargaSatuan" placeholder="Harga Satuan">
+            
+              <h3>Alamat</h3>
+              
+              
+              <label for="fname"><i class="fa fa-user"></i> Nama Lengkap</label>
+              <input type="text" id="fname" name="name" placeholder="Michael Albert Steven">
+
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="email" id="email" name="email" placeholder="michaelalbertsteven27@gmail.com">
+
+              <label for="adr"><i class="fa fa-address-card-o"></i> Alamat</label>
+              <input type="text" id="adr" name="address" placeholder="Jl. Raya Kampus Unud, No. 10">
+
+              <label for="city"><i class="fa fa-institution"></i> Kota</label>
+              <input type="text" id="city" name="city" placeholder="Badung">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">Provinsi</label>
+                  <input type="text" id="state" name="state" placeholder="Bali">
+                </div>
+                <div class="col-50">
+                  <label for="posCode">Kode Pos</label>
+                  <input type="text" id="posCode" name="posCode"  placeholder="80364">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-50">
+              <h3>Pembayaran</h3>  
+              
+              <label for="fname">Bank Transfer</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+
+              <label for="bankName">Nama Bank</label>
+              <input type="text" id="bankName" name="bankName" placeholder="BANK MANDIRI">
+
+              <label for="cname">Nama Rekening</label>
+              <input type="text" id="cname" name="cardname" placeholder="Michael Albert Steven">
+  
+              <label for="ccnum">Nomor Rekening</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+              <label for="total">Total</label>
+              <input type="text" id="total" name="total" placeholder="IDR">
+
+              <label for="buktiPembayaran">Bukti Pembayaran</label>
+              <input type="text" id="buktiPembayaran" name="buktiPembayaran" placeholder="Link Google Drive">
+            </div>
+            
+          </div>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+        <a href="index.html"><input type="submit" value="Back to Main Page" class="backbtn"></a>
+
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+<script src="mikrokontroller.js"></script>
+</body>
+</html>
